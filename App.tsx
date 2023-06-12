@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { View, Text,  StyleSheet, TouchableOpacity, Image } from 'react-native';
 import WeatherScreen from './screens/WeatherScreen';
 import ClothScreen from './screens/ClothScreen';
-import { AntDesign } from '@expo/vector-icons';
 
  const App = () => {
   const [activeScreen, setActiveScreen] = useState('weather');
@@ -22,7 +21,6 @@ import { AntDesign } from '@expo/vector-icons';
     <View style={styles.container}>
       <View style={styles.menu2}>
         <Image style={styles.ImageSize} source={require('C:/Users/user/reactNative/Weather/screens/img/logo4.png')}/>
-        <Text>날씨와 옷</Text>
       </View>
       {renderScreen()}
       <View style={styles.menu1}>
